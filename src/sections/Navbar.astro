@@ -1,0 +1,74 @@
+---
+import '@fontsource/poppins';
+---
+
+<nav>
+    <div class="flex items-center justify-between py-4 px-6 lg:px-16  relative shadow-sm shadow-[#1d1c1c] lg:fixed lg:w-full">
+        <div class="flex items-center gap-3">
+            <img class="rounded-[30px] border-2 border-yellow-300" width="50px" src="https://i.postimg.cc/vZx3Bt1v/logo.webp" alt="img">
+            <div class="text-white lg:text-lg"><h2>Nicolas Dume</h2></div>
+        </div>
+        <div>
+            <ul class="hidden md:flex md:gap-4 lg:flex lg:gap-5 text-white lg:textlg">
+                <li class="p-1 hover:text-gray-300 hover:transition hover:duration-200 hover:ease-in-out"><a href="/" aria-label="Home"></a>Inicio</a></li>
+                <li class="p-1 hover:text-gray-300 hover:transition hover:duration-200 hover:ease-in-out"><a href="/" aria-label="Projects"></a>Proyectos</a></li>
+                <li class="p-1 hover:text-gray-300 hover:transition hover:duration-200 hover:ease-in-out"><a href="/" aria-label="About"></a>About</a></li>
+            </ul>
+            <button
+                aria-label="open-button" 
+                type="button"
+                id="menu-button"
+                class="text-white md:hidden lg:hidden"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/></svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div
+    class="w-full bg-[#13151A] hidden lg:hidden absolute top-0 h-screen py-4 px-6"
+    id="menu-open"  
+>
+    <div>
+        <button 
+            type="button"
+            aria-label="closed-button"
+            id="menu-closed"
+            class="text-white md:hidden lg:hidden absolute right-6"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 23L23 9m0 14L9 9"/></svg>
+        </button>
+    </div>
+    <ul class=" mt-10 text-center p-20  text-white lg:hidden">
+        <li class="my-4 py-4 border-b border-[#30302f] hover:bg-[#30302f] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">Home</li>
+        <li class="my-4 py-4 border-b border-[#30302f] hover:bg-[#30302f] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">About</li>
+        <li class="my-4 py-4 border-b border-[#30302f] hover:bg-[#30302f] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">Projects</li>
+    </ul>
+
+
+</div>
+
+<script>
+    const button = document.querySelector("#menu-button") as Element;
+    const menuOpen = document.querySelector("#menu-open") as Element;
+    const closeButton = document.querySelector("#menu-closed") as HTMLElement;
+
+    button.addEventListener("click", () => {
+        menuOpen.classList.toggle("hidden")
+    })
+
+    closeButton.addEventListener("click", () => {
+
+    if (menuOpen.classList.contains("hidden")) {
+        return;
+    }
+    menuOpen.classList.add("hidden");
+});
+</script>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
