@@ -2,15 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../sections/Navbar.astro';
 
-import Principal from '../sections/Principal.astro';
-import Footer from '../sections/Footer.astro';
+import Main from '../sections/Main.astro';
 ---
 
 <Layout title="Nicolas Dume Fullstack">
 	<Navbar />
-	<main class="flex justify-center px-12">
-		<Principal />
+	<main class="flex flex-col justify-center lg:px-20 xl:px-28 2xl:px-56">
+		<Main />
 	</main>
-	<Footer />
+
 </Layout>
 

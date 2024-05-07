@@ -1,0 +1,35 @@
+---
+import ButtonsLinks from '../components/ButtonsLinks.astro'
+import AboutMe from './AboutMe.astro'
+
+import Projects from './Projects.astro'
+---
+
+<section class="container mx-auto mt-3 lg:mt-10  ">
+    
+    <section class="h-screen justify-center lg:justify-normal flex flex-col lg:mt-36 2xl:mt-56 ">
+        <article class=" p-4 sm:px-8 lg:px-12">
+            <p class="text-center lg:text-start text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl text-white">¡Hola a todos!👋 Soy Nicolás, un desarrollador <span class="text-yellow-600 font-bold">Full Stack</span>, autodidacta y apasionado por resolver problemas, con el objetivo de convertirme en un destacado <span class="text-yellow-600 font-bold">Tech Lead</span> y contribuir al crecimiento y éxito de equipos de desarrollo.</p>
+            </p>
+
+        </article>
+
+        <ButtonsLinks />
+    </section>
+    <section class="h-screen justify-center lg:justify-normal ">
+        <h3 class="mt-12 lg:m-0 text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl  text-center  lg:text-start text-yellow-400 font-bold uppercase">Proyectos</h3>
+
+        <Projects />
+    
+    </section>
+
+    <section class="h-screen mt-20 justify-center lg:justify-normal">
+        <AboutMe />
+
+    </section>
+    <footer class="w-full mt-2 lg:mt-0">
+        <h3 class=" p-2 text-white text-base sm:text-lg md:text-lg lg:text-xl 2xl:text-2xl  text-center font-bold"><span class="text-yellow-400 font-normal">Desarrollado por:</span> @nsensedev</h3>
+    </footer>
+    
+
+</section>
