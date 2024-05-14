@@ -19,5 +19,21 @@ import Card from '../components/Card.astro';
 
 
 <script>
-		const projects = document.querySelector("#projects");
+		const goToProjects = document.getElementById("goToProjects");
+		goToProjects?.addEventListener("click",(e) => {
+			e.preventDefault();
+
+			const projectSection = document.getElementById("projects");
+
+			projectSection?.scrollIntoView({ behavior: 'smooth' })
+		});
+
+		const goToAbout = document.getElementById("goToAbout");
+		goToAbout?.addEventListener("click", (e) => {
+			e.preventDefault();
+			
+			const aboutSection = document.getElementById("about");
+
+			aboutSection?.scrollIntoView({ behavior: 'smooth' });
+		})
 </script>
