@@ -1,72 +1,77 @@
-<section class="h-screen container mx-auto pb-4 px-6 md:px-14 lg:px-24 xl:px-32 2xl:px-20 grid lg:grid-cols-2 2xl:grid-cols-3 justify-items-center gap-7 md:gap-12 lg:gap-8 2xl:gap-5 mt-0 md:mt-10 lg:mt-14 2xl:mt-16 ">
-    <h3 class="text-center text-xl sm:text-2xl uppercase font-bold text-yellow-500">Proyectos</h3>
+<section 
+    id="projects"
+    class="h-screen  container mx-auto pb-4 px-6 md:px-14 lg:px-24 xl:px-32 2xl:px-20 -mt-14 md:mt-10 lg:mt-14 2xl:-mt-24  "
+>
+    <h3 class="text-center text-xl sm:text-2xl uppercase font-bold text-yellow-500 py-10">Proyectos</h3>
     
-    <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md relative">
-        <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
-            <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Dk Digital App</h2>
-            <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
-                La Demo Web de Marketing Digital, una SPA con Next.js, se basa en Pinterest. Destaca servicios de marketing digital con una interfaz elegante y receptiva,
-                navegación fluida y responsiva. 
-            </p>
-            <button 
-                aria-label="demo"
-                class="relative z-10 w-full p-2 sm:p-3 lg:p-2  text-sm sm:text-lg  uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-300"
-                onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
-            >
-             Ver Demo
-            </button>
-        
-        </div>
-        <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
-        <div class="absolute inset-0 group-hover:shadow-lg">
-            <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
-        </div>
-    </div>
-    
-
-
-    <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md  relative">
-        <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
-            <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">MultiTasker App</h2>
-            <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
-                
-                     Next Auth, que incluye demostración con GitHub. Utiliza una API simulando una agenda de usuarios para CRUD y presenta una sección clásica de lista de tareas. 
-            </p>
-            <button 
-                aria-label="demo"
-                class="relative z-10 w-full p-2 sm:p-3 lg:p-2  text-sm sm:text-lg  uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-200"
-                onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
-            >
-                Ver Demo
-            </button>
-        
-        </div>
-        <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
-        <div class="absolute inset-0 group-hover:shadow-lg">
-            <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
-        </div>
-    </div>
-
-    <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md relative">
-        <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
-            <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Api Crud</h2>
-            <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
-                API para gestionar elementos. creada con Node.js, Express y TypeScript: GET para recuperar, POST para agregar, PUT para actualizar y DELETE para eliminar elementos.</p>
-            <button 
-                aria-label="demo"
-                class="relative z-10 w-full p-2 sm:p-3 lg:p-2   text-sm sm:text-lg uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-200"
-                onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
-            >
-                Ver Demo
-            </button>
+    <div class="grid lg:grid-cols-3 2xl:grid-cols-3  justify-items-center gap-7 md:gap-12 lg:gap-8 2xl:gap-5">
+        <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md relative">
+            <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
+                <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Dk Digital App</h2>
+                <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
+                    La Demo Web de Marketing Digital, una SPA con Next.js, se basa en Pinterest. Destaca servicios de marketing digital con una interfaz elegante y receptiva,
+                    navegación fluida y responsiva. 
+                </p>
+                <button 
+                    aria-label="demo"
+                    class="relative z-10 w-full p-2 sm:p-3 lg:p-2  text-sm sm:text-lg  uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-300"
+                    onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
+                >
+                 Ver Demo
+                </button>
             
+            </div>
+            <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
+            <div class="absolute inset-0 group-hover:shadow-lg">
+                <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
+            </div>
         </div>
-        <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
-        <div class="absolute inset-0 group-hover:shadow-lg">
-            <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
+        
+    
+    
+        <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md  relative">
+            <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
+                <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">MultiTasker App</h2>
+                <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
+                    
+                         Next Auth, que incluye demostración con GitHub. Utiliza una API simulando una agenda de usuarios para CRUD y presenta una sección clásica de lista de tareas. 
+                </p>
+                <button 
+                    aria-label="demo"
+                    class="relative z-10 w-full p-2 sm:p-3 lg:p-2  text-sm sm:text-lg  uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-200"
+                    onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
+                >
+                    Ver Demo
+                </button>
+            
+            </div>
+            <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
+            <div class="absolute inset-0 group-hover:shadow-lg">
+                <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
+            </div>
         </div>
+    
+        <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-sm xl:max-w-lg 2xl:max-w-md relative">
+            <div class="p-6 sm:p-12 md:p-16 lg:p-8 2xl:py-12 2xl:px-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700">
+                <h2 class="mb-2 sm:py-2 2xl:p-0 text-base sm:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Api Crud</h2>
+                <p class="mb-3 text-sm sm:text-lg font-normal text-gray-700 dark:text-gray-400 ">
+                    API para gestionar elementos. creada con Node.js, Express y TypeScript: GET para recuperar, POST para agregar, PUT para actualizar y DELETE para eliminar elementos.</p>
+                <button 
+                    aria-label="demo"
+                    class="relative z-10 w-full p-2 sm:p-3 lg:p-2   text-sm sm:text-lg uppercase text-white rounded-full bg-gradient-to-r from-[#664bc0ea] to-[#3d40f0ea] border border-[#6e51cfea] hover:bg-gradient-to-r hover:from-[#4f46e5ea] hover:to-[#342eca] transition duration-200"
+                    onclick="window.open('https://agencia-digital-app.vercel.app/', '_blank');"
+                >
+                    Ver Demo
+                </button>
+                
+            </div>
+            <div class="absolute inset-0 overflow-hidden rounded-md" style="top: 8px; left: 8px;"></div>
+            <div class="absolute inset-0 group-hover:shadow-lg">
+                <div class="bg-[#3d40f0ea] opacity-30 w-full h-32 blur-2xl"></div>
+            </div>
+        </div>
+    
     </div>
-
 
 </section>
 
